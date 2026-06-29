@@ -1,0 +1,268 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --color-gold: #b8963e;
+  --color-gold-light: #d4af37;
+  --color-gold-dark: #8c702a;
+  --color-navy: #0F172A;
+  --color-navy-light: #1E293B;
+  --color-navy-dark: #020617;
+  --color-cream: #F0F2F5;
+  --color-cream-dark: #E2E8F0;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color-scheme: only light;
+  forced-color-adjust: none;
+}
+
+/* Sfondo del layout generale tipo Facebook / Chat AI Studio */
+div[class*="min-h-screen"] {
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
+}
+
+/* Typography helper classes */
+.font-title {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+.font-mono-label {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbar minimalista */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Ensure all cards and animated elements are immediately visible */
+.reveal-card, [class*="reveal"], [class*="animate-fade"] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Glassmorphism subtle */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ==========================================================================
+   FACEBOOK UI DESIGN SYSTEM THEME (FAMILIARE, PULITO, UNIFICATO)
+   ========================================================================== */
+
+/* 1. Sfondo generale pagina bianco puro (#FFFFFF) e testo nitido (#050505) */
+body, html, div[class*="min-h-screen"], main {
+  background-color: #FFFFFF !important;
+  color: #050505 !important;
+}
+
+/* 2. Top Header fisso bianco con bordi e ombre tipiche di FB */
+header {
+  background-color: #FFFFFF !important;
+  color: #050505 !important;
+  border-bottom: 1px solid #E4E6EB !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+}
+header *:not([class*="bg-[#1877F2]"]):not([class*="bg-[#1877F2]"] *):not([class*="text-white"]):not([class*="bg-blue"]) {
+  color: #050505 !important;
+}
+header [class*="bg-[#1877F2]"],
+header [class*="bg-[#1877F2]"] *,
+header [class*="bg-blue"],
+header [class*="bg-blue"] * {
+  color: #FFFFFF !important;
+}
+header button:not([class*="bg-[#1877F2]"]):not([class*="bg-blue"]) {
+  background-color: #E4E6EB !important;
+  color: #050505 !important;
+  border: none !important;
+}
+header button:not([class*="bg-[#1877F2]"]):not([class*="bg-blue"]):hover {
+  background-color: #D8DADF !important;
+}
+
+/* 3. CONVERSIONE UNIVERSALE DEGLI SFONDI SCURI O GIALLINI IN BIANCO PULITO SOCIAL */
+section, article, main > div > div,
+div[id*="manifesto"], div[id*="archivio"], div[id*="dossier"], div[id*="portal"], div[id*="social"],
+div[class*="bg-[#0a2342]"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-[#0a2342]"],
+div[class*="bg-slate-900"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-slate-900"],
+div[class*="bg-slate-950"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-slate-950"],
+div[class*="bg-[#0B1E3F]"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-[#0B1E3F]"],
+div[class*="bg-[#002244]"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-[#002244]"],
+div[class*="bg-[#00468C]"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-[#00468C]"],
+div[class*="bg-[#111827]"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-[#111827]"],
+div[class*="bg-black"]:not([class*="fixed"]):not([class*="inset-0"]):not([class*="inline-flex"]):not([class*="rounded-full"]):not(button),
+section[class*="bg-black"],
+[class*="bg-[#FAFAF8]"], [class*="bg-[#FAF9F5]"], [class*="bg-[#FAF8F4]"], [class*="bg-[#FAF6EE]"] {
+  background-color: #FFFFFF !important;
+  color: #050505 !important;
+  box-shadow: none !important;
+}
+
+/* Solo le card principali del feed hanno un unico bordo morbido e pulito */
+main > div > div {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* 4. Box secondari interni nei contenuti (citazioni, elenchi) -> Grigio chiaro FB (#F7F8FA) */
+:where(main, section, article) :where(div, p, blockquote, pre, ul, li)[class*="bg-"]:not([class*="rounded-3xl"]):not([class*="rounded-[2.5"]):not([class*="rounded-[2rem"]):not([class*="fixed"]):not([class*="inset-0"]):not(button):not([class*="rounded-full"]):not([class*="inline-flex"]):not([class*="bg-[#1877F2]"]):not([class*="bg-blue"]) {
+  background-color: #F8F9FA !important;
+  color: #050505 !important;
+  border: 1px solid #E9ECEF !important;
+  box-shadow: none !important;
+}
+
+/* 5. Colori Testi Nitidi (Primario #050505) */
+:where(main, section, article, [id*="manifesto"], [id*="archivio"]) :where(h1, h2, h3, h4, h5, h6, strong, b) {
+  color: #050505 !important;
+}
+:where(main, section, article, [id*="manifesto"], [id*="archivio"]) :where(p, li, label, blockquote, td, th, dt, dd, span):not(button):not(button *):not([class*="bg-[#1877F2]"]):not([class*="bg-blue"]):not([class*="text-blue"]):not([class*="text-amber"]):not([class*="text-[#1877F2]"]) {
+  color: #050505 !important;
+}
+
+/* Colori accento coerenti in stile Facebook per titoletti o etichette */
+[class*="text-amber-4"], [class*="text-[#b8963e]"] {
+  color: #1877F2 !important;
+}
+[class*="text-slate-4"], [class*="text-slate-5"], [class*="text-gray-5"] {
+  color: #65676B !important;
+}
+
+/* 6. Dividers di Capitolo Sticky */
+[id*="capitolo-"] {
+  background-color: #FFFFFF !important;
+  border-color: #E4E6EB !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+}
+[id*="capitolo-"] span {
+  background-color: #1877F2 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+/* 7. Pulsanti Primari -> Il Blu Ufficiale Facebook (#1877F2) */
+button[class*="bg-[#0a2342]"],
+button[class*="bg-[#0066CC]"],
+button[class*="bg-[#b8963e]"],
+button[class*="bg-slate-950"],
+button[class*="bg-slate-900"],
+button[class*="bg-blue"],
+button[class*="bg-[#00468C]"],
+button[class*="bg-[#002244]"],
+a[class*="bg-[#"] {
+  background-color: #1877F2 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+button[class*="bg-[#"] *,
+button[class*="bg-slate"] *,
+button[class*="bg-blue"] *,
+a[class*="bg-[#"] * {
+  color: #FFFFFF !important;
+}
+
+button[class*="bg-[#"]:hover,
+button[class*="bg-slate"]:hover,
+button[class*="bg-blue"]:hover {
+  background-color: #166FE5 !important;
+}
+
+/* Pulsanti trasparenti/secondari nei box */
+button[class*="bg-white"],
+button[class*="bg-slate-50"],
+button[class*="bg-slate-100"],
+button[class*="bg-transparent"] {
+  background-color: #E4E6EB !important;
+  color: #050505 !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+button[class*="bg-white"] *,
+button[class*="bg-slate-50"] *,
+button[class*="bg-slate-100"] *,
+button[class*="bg-transparent"] * {
+  color: #050505 !important;
+}
+button[class*="bg-white"]:hover,
+button[class*="bg-slate-50"]:hover,
+button[class*="bg-slate-100"]:hover {
+  background-color: #D8DADF !important;
+}
+
+/* 8. Modali e Overlay */
+div[class*="backdrop-blur"] > div[class*="rounded-3xl"] {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E4E6EB !important;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 9. Footer blu con testi bianchi e accenti oro */
+footer {
+  background-color: #1877F2 !important;
+  color: #FFFFFF !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+footer :not([class*="text-[#d4af37]"]):not([class*="text-[#D4AF37]"]):not([class*="text-yellow"]):not([class*="text-gold"]):not([class*="text-amber"]):not([class*="stroke-[#d4af37]"]) {
+  color: #FFFFFF !important;
+}
+footer [class*="text-[#d4af37]"],
+footer [class*="text-[#d4af37]"] *,
+footer [class*="text-[#D4AF37]"],
+footer [class*="text-[#D4AF37]"] * {
+  color: #d4af37 !important;
+}
+footer [class*="text-slate-400"] {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+footer [class*="text-white/85"] {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+footer [class*="text-white/90"] {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 10. Eccezione universale: testo bianco su badge, logo e bottoni blu Facebook */
+[class*="bg-[#1877F2]"], [class*="bg-[#1877F2]"] *,
+[class*="bg-blue-600"], [class*="bg-blue-600"] *,
+header [class*="bg-[#1877F2]"] * {
+  color: #FFFFFF !important;
+}

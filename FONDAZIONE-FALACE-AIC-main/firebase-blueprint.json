@@ -1,0 +1,35 @@
+{
+  "entities": {
+    "user_state": {
+      "title": "UserSettings",
+      "description": "User specific application settings and session state automatically persisted to the cloud",
+      "type": "object",
+      "properties": {
+        "activeTab": {
+          "type": "string",
+          "description": "The active dashboard tab"
+        },
+        "selectedBookForAi": {
+          "type": "string",
+          "description": "The selected book title for the AI assistant"
+        },
+        "isChatOpen": {
+          "type": "boolean",
+          "description": "Whether the AI assistant chatbot panel is open"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The last time the state was autosaved"
+        }
+      },
+      "required": ["activeTab", "isChatOpen", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/states/current": {
+      "schema": "user_state",
+      "description": "Stores the user's autosave states and workspace current state for sessions"
+    }
+  }
+}

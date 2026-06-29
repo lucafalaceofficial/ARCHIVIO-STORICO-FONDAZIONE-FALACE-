@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Arial", -apple-system, sans-serif;
+  --font-display: "Arial", -apple-system, sans-serif;
+  --font-mono: "Arial", monospace;
+
+  --color-gold-50: #fefbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d4af37; /* Alchemy Gold */
+  --color-gold-700: #b48a21;
+  --color-gold-800: #926919;
+  --color-gold-900: #785217;
+  --color-gold-950: #452b08;
+
+  --color-cosmic-bg: #ffffff;
+  --color-cosmic-card: #ffffff;
+  --color-cosmic-border: #e2e8f0;
+
+  /* Force Slate colors to pure black to make text dark on light surfaces */
+  --color-slate-500: #000000;
+  --color-slate-600: #000000;
+  --color-slate-700: #000000;
+  --color-slate-800: #000000;
+  --color-slate-900: #000000;
+  --color-slate-950: #000000;
+
+  /* Force Zinc colors to pure black for high contrast */
+  --color-zinc-500: #000000;
+  --color-zinc-650: #000000;
+  --color-zinc-600: #000000;
+  --color-zinc-700: #000000;
+  --color-zinc-800: #000000;
+  --color-zinc-900: #000000;
+
+  /* Force Gray colors to pure black for high contrast */
+  --color-gray-500: #000000;
+  --color-gray-600: #000000;
+  --color-gray-700: #000000;
+  --color-gray-800: #000000;
+  --color-gray-900: #000000;
+}
+
+/* Base styling */
+html, body {
+  background-color: var(--color-cosmic-bg);
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* Apply Arial fallback to absolutely all textual elements */
+body, button, input, textarea, select, text, option, span, p, h1, h2, h3, h4, h5, h6, a, label, li {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Ensure text on all light-colored backgrounds has black text color */
+body,
+.bg-white,
+.bg-slate-50,
+.bg-slate-100,
+.bg-slate-200,
+.bg-amber-50,
+.bg-blue-50,
+.bg-green-50,
+.bg-teal-50,
+.bg-purple-50,
+.bg-gray-50,
+.bg-red-50,
+.bg-orange-50,
+.bg-slate-100\/50,
+.bg-slate-50\/40,
+.bg-blue-50\/50,
+.bg-amber-50\/50,
+.bg-green-50\/10,
+.bg-red-50\/10 {
+  color: #000000 !important;
+}
+
+/* Specific elements on light backgrounds should always be pure black */
+.bg-white p, .bg-white span, .bg-white div:not([class*="bg-"]), .bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6, .bg-white label, .bg-white li, .bg-white a,
+.bg-slate-50 p, .bg-slate-50 span, .bg-slate-50 div:not([class*="bg-"]), .bg-slate-50 h1, .bg-slate-50 h2, .bg-slate-50 h3, .bg-slate-50 h4, .bg-slate-50 h5, .bg-slate-50 h6, .bg-slate-50 label, .bg-slate-50 li, .bg-slate-50 a,
+.bg-slate-100 p, .bg-slate-100 span, .bg-slate-100 div:not([class*="bg-"]), .bg-slate-100 h1, .bg-slate-100 h2, .bg-slate-100 h3, .bg-slate-100 h4, .bg-slate-100 label, .bg-slate-100 li,
+.bg-amber-50 p, .bg-amber-50 span, .bg-amber-50 h1, .bg-amber-50 h2, .bg-amber-50 h3, .bg-amber-50 h4, .bg-amber-50 label,
+.bg-blue-50 p, .bg-blue-50 span, .bg-blue-50 h1, .bg-blue-50 h2, .bg-blue-50 h3, .bg-blue-50 label,
+.bg-green-50 p, .bg-green-50 span, .bg-green-50 h1, .bg-green-50 h2, .bg-green-50 h3, .bg-green-50 label,
+.bg-teal-50 p, .bg-teal-50 span, .bg-teal-50 h1, .bg-teal-50 h2, .bg-teal-50 h3, .bg-teal-50 label {
+  color: #000000 !important;
+}
+
+/* Force dark surface classes to render crisp white text for all child elements */
+.bg-slate-900,
+.bg-slate-900 *,
+.bg-slate-800,
+.bg-slate-800 *,
+.bg-slate-950,
+.bg-slate-950 *,
+.bg-blue-600,
+.bg-blue-600 *,
+.bg-blue-700,
+.bg-blue-700 *,
+.bg-blue-800,
+.bg-blue-800 *,
+.bg-indigo-650,
+.bg-indigo-650 *,
+.bg-indigo-600,
+.bg-indigo-600 *,
+.bg-teal-600,
+.bg-teal-600 *,
+.bg-teal-700,
+.bg-teal-700 *,
+.bg-teal-800,
+.bg-teal-800 *,
+.bg-amber-500,
+.bg-amber-500 *,
+.bg-amber-600,
+.bg-amber-600 *,
+.bg-red-650,
+.bg-red-650 *,
+.bg-red-650,
+.bg-red-650 *,
+.bg-red-600,
+.bg-red-600 *,
+.bg-green-700,
+.bg-green-700 *,
+.bg-green-650,
+.bg-green-650 *,
+.bg-green-600,
+.bg-green-600 *,
+.bg-pink-600,
+.bg-pink-600 * {
+  color: #ffffff !important;
+}
+
+/* Specific high-specificity CSS rules for elements inside dark-colored wrappers to prevent black parent-selectors from overriding them */
+.bg-blue-600 p, .bg-blue-600 h1, .bg-blue-600 h2, .bg-blue-600 h3, .bg-blue-600 h4, .bg-blue-600 h5, .bg-blue-600 h6, .bg-blue-600 span, .bg-blue-600 div, .bg-blue-600 button, .bg-blue-600 a,
+.bg-blue-700 p, .bg-blue-700 h1, .bg-blue-700 h2, .bg-blue-700 h3, .bg-blue-700 h4, .bg-blue-700 h5, .bg-blue-700 h6, .bg-blue-700 span, .bg-blue-700 div, .bg-blue-700 button, .bg-blue-700 a,
+.bg-blue-800 p, .bg-blue-800 h1, .bg-blue-800 h2, .bg-blue-800 h3, .bg-blue-800 h4, .bg-blue-800 h5, .bg-blue-800 h6, .bg-blue-800 span, .bg-blue-800 div, .bg-blue-800 button, .bg-blue-800 a,
+.bg-slate-900 p, .bg-slate-900 h1, .bg-slate-900 h2, .bg-slate-900 h3, .bg-slate-900 h4, .bg-slate-900 h5, .bg-slate-900 h6, .bg-slate-900 span, .bg-slate-900 div, .bg-slate-900 button, .bg-slate-900 a,
+.bg-pink-600 p, .bg-pink-600 h1, .bg-pink-600 h2, .bg-pink-600 h3, .bg-pink-600 h4, .bg-pink-600 h5, .bg-pink-600 h6, .bg-pink-600 span, .bg-pink-600 div, .bg-pink-600 button, .bg-pink-600 a {
+  color: #ffffff !important;
+}
+
+/* Soft rounded, fluid, Feng Shui styles */
+.fengshui-card {
+  border-radius: 2rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fengshui-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Beautiful custom circular orb gradient */
+.hemisphere-glow-right {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, rgba(255,255,255,0) 70%);
+}
+
+.hemisphere-glow-left {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, rgba(255,255,255,0) 70%);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.05); opacity: 0.35; }
+}
+
+.glow-pulse {
+  animation: pulseGlow 10s infinite ease-in-out;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fondazione_falace_archive>
+  <metadata>
+    <applet_id>c8000d60-5368-4959-bf8c-0d29152ca31c</applet_id>
+    <denomination_it>FF FONDAZIONE FALACE delle AIC</denomination_it>
+    <denomination_en>FF FALACE FOUNDATION for AIC DEVELOPMENT</denomination_en>
+    <founder>Dott. Luca Falace</founder>
+    <email>Dott.LucaFalace@gmail.com</email>
+    <ateco_code>72.20.00</ateco_code>
+    <ateco_desc_it>Ricerca e Sviluppo Sperimentale nel settore delle Scienze Sociali ed Umanistiche</ateco_desc_it>
+    <ateco_desc_en>Experimental Research and Development in Social Sciences and Humanities</ateco_desc_en>
+    <scope_it>Salvaguardia, archiviazione logica, sistematizzazione rigorosa e divulgazione globale del patrimonio artistico, scientifico e brevettuale del Fondatore</scope_it>
+    <scope_en>Guardianship, logical archival, rigorous systemization, and global dissemination of the Founder's artistic, scientific, and patent heritage</scope_en>
+    <legal_backing>
+      <mic_mibac>250 Opere d'Arte e 41 Manoscritti registrati presso il Ministero della Cultura</mic_mibac>
+      <uibm>3 Brevetti d'Invezione industriale registrati regolarmente</uibm>
+      <usa_music>40 Composizioni musicali caricate e protette su piattaforme e digital copyright USA</usa_music>
+      <zenodo_cern_doi>Gold Trilogy scientifica e tesi brevettuali depositate permanentemente con indici DOI CERN Zenodo</zenodo_cern_doi>
+      <opac_sbn>46 Libri inseriti ufficialmente nel catalogo bibliografico nazionale italiano delle biblioteche</opac_sbn>
+    </legal_backing>
+  </metadata>
+
+  <books_catalog>
+    <total_indexed_volumes>46</total_indexed_volumes>
+    <books>
+      <book id="book-1">
+        <title>Teoria Generale del Sincronismo Creativo e Teoria del Campo Unificato AIC — Volume Primo</title>
+        <year>2025</year>
+        <publisher>Independently published</publisher>
+        <isbn>979-8-29727-798-4</isbn>
+        <pages>482</pages>
+        <type>theory</type>
+        <doi>10.5281/zenodo.17080308</doi>
+        <description>Il corpus fondante sul Metodo AIC: modellazione, strutturazione e applicazione pratica della sincronicità indotta e monitorata tramite il sistema tecnologico AIC-SYNC©.</description>
+        <link>https://amzn.eu/d/01VFjFD2</link>
+      </book>
+      <book id="book-2">
+        <title>Teoria del Campo Unificato: Trattato sull'Energia Creativa — Volume Secondo</title>
+        <year>2025</year>
+        <publisher>Independently published</publisher>
+        <isbn>979-8-29890-304-2</isbn>
+        <pages>295</pages>
+        <type>science</type>
+        <doi>10.5281/zenodo.17041593</doi>
+        <description>Analisi matematica e risonanze hertziane collegate agli effetti della coscienza umana nei campi elettromagnetici, quantistici e gravitazionali solidali ad AIC-EC-HZ.</description>
+        <link>https://amzn.eu/d/00GVQ1JW</link>
+      </book>
+      <book id="book-vol-3">
+        <title>Interazione Psicofisica con il Campo Unificato AIC-EC: Formalizzazione della Legge S = φ(f) e del Ciclo Operativo AIC-EC-HZ — Volume Terzo</title>
+        <year>2026</year>
+        <publisher>Independently published</publisher>
+        <pages>312</pages>
+        <type>theory</type>
+        <doi>10.5281/zenodo.20414984</doi>
+        <description>Il Volume Terzo conclusivo della Trilogia d'oro. Presenta la formalizzazione matematica rigorosa della legge universale S = φ(f) per l'interazione delle onde biologiche coerenti con le portanti del campo unificato cosmico, depositata e certificata presso il CERN di Ginevra su Zenodo.</description>
+        <link>#paper-zenodo</link>
+      </book>
+      <book id="book-aic-sync-patent">
+        <title>Brevetto AIC-Sync© e i 9 Livelli della Sincronicità — Certificato di Deposito e Specifica Brevettuale</title>
+        <year>2024</year>
+        <publisher>UIBM Ministero delle Imprese</publisher>
+        <type>patent</type>
+        <doi>10.5281/zenodo.17793651</doi>
+        <description>La tesi di brevetto ufficiale depositata presso l'Ufficio Italiano Brevetti e Marchi (UIBM) concernente la modellazione ingegneristica e algoritmica dei 9 livelli di sincronizzazione e interazione psicofisica della mente.</description>
+        <link>https://zenodo.org/records/17793651</link>
+      </book>
+      <book id="book-3">
+        <title>Frequenze Hertziane: Il Linguaggio Segreto dell'Universo</title>
+        <year>2026</year>
+        <publisher>Independently published</publisher>
+        <pages>120</pages>
+        <type>science</type>
+        <description>Guida applicativa all'uso delle frequenze di risonanza universali per la meditazione profonda, lo stimolo neuro-fisiologico e la sintonizzazione sul modello 432Hz.</description>
+        <link>https://payhip.com/b/jF3KP</link>
+      </book>
+      <book id="book-4">
+        <title>Sincronismo Creativo: Il Metodo del Sincronismo Creativo</title>
+        <year>2024</year>
+        <publisher>Independently published</publisher>
+        <isbn>979-8-30254-793-4</isbn>
+        <pages>488</pages>
+        <type>theory</type>
+        <description>Manuale metodologico con protocolli pratici per sviluppare e indurre sincronicità operative a livello professionale, ideativo e sincronismo attivo individuale.</description>
+        <link>https://payhip.com/b/5zMOE</link>
+      </book>
+      <book id="book-5">
+        <title>Invenzioni e Brevetti: I Codici FDL — 41 Invenzioni</title>
+        <year>2018</year>
+        <publisher>Independently published</publisher>
+        <isbn>9781731477064</isbn>
+        <type>patent</type>
+        <description>Catalogo e specifiche tecniche dettagliate che documentano le 41 invenzioni registrate e i codici logico-funzionali legati alla tradizione inventiva di famiglia.</description>
+        <link>https://www.amazon.com/START-UP-CULTURALE-ARTE-SCIENZA-Italian-ebook/dp/B0774WCKJ9</link>
+      </book>
+      <book id="book-6">
+        <title>Startup Culturale: Arte &amp; Scienza</title>
+        <year>2017</year>
+        <publisher>Amazon Content</publisher>
+        <asin>B0774WCKJ9</asin>
+        <type>philosophy</type>
+        <description>Guida strategica e saggio filosofico concernente la sostenibilità delle idee d'artista coniugata al progresso della ricerca e dell'innovazione brevettuale.</description>
+        <link>https://www.amazon.com/START-UP-CULTURALE-ARTE-SCIENZA-Italian-ebook/dp/B0774WCKJ9</link>
+      </book>
+      <book id="book-7">
+        <title>Il Sincronismo Creativo: La Legge di Attrazione e il Potere del Pensiero Creativo</title>
+        <year>2013</year>
+        <publisher>Iemme Edizioni</publisher>
+        <isbn>978-88-97776-33-8</isbn>
+        <type>philosophy</type>
+        <description>Il legame oggettivo tra focus intenzionale e riscontro oggettivo d'evento. Saggio introduttivo sull'attrazione sincronicistica.</description>
+        <link>https://fondazione-falace-1090621905770.europe-west2.run.app</link>
+      </book>
+      <book id="book-8">
+        <title>Tu Sei: Sincronismi, Coincidenze, Sincronicità</title>
+        <year>2011</year>
+        <publisher>Youcanprint</publisher>
+        <isbn>978-88-6618-129-9</isbn>
+        <type>philosophy</type>
+        <description>Analisi fenomenologica del concetto di coincidenza e superamento della sincronicità junghiana intesa solo come attesa passiva.</description>
+        <link>https://fondazione-falace-1090621905770.europe-west2.run.app</link>
+      </book>
+      <book id="book-9">
+        <title>Il Sincronismo Creativo: Studio degli Eventi Paralleli</title>
+        <year>2007</year>
+        <publisher>Boopen/Photocity</publisher>
+        <isbn>978-88-6223-564-8</isbn>
+        <type>theory</type>
+        <description>Prima formalizzazione editoriale della teoria degli eventi congiunti e dei paralleli intellettuali in concomitanza temporale.</description>
+        <link>https://fondazione-falace-1090621905770.europe-west2.run.app</link>
+      </book>
+      <book id="book-10">
+        <title>L'Opera Celeste: Romanzo Alchemico Filosofico</title>
+        <year>2005</year>
+        <publisher>O.R.O. Edizioni</publisher>
+        <isbn>88-901926-0-7</isbn>
+        <type>art</type>
+        <description>Opera narrativa e simbolica volta a tracciare la via ermetica ricollegata alla metamorfosi della coscienza e alle origini della creazione d'arte.</description>
+        <link>https://fondazione-falace-1090621905770.europe-west2.run.app</link>
+      </book>
+    </books>
+  </books_catalog>
+
+  <artworks_catalog>
+    <total_certified_artworks>250</total_certified_artworks>
+    <registry>Ministero della Cultura (MiC / MiBAC), DDS Discoteca di Stato, Museo dell'audiovisivo</registry>
+    <artworks>
+      <artwork id="art-1">
+        <title>Diacronia Figurativa #12</title>
+        <year>2012</year>
+        <category>pittura</category>
+        <venue>Museo di Capodimonte / PAN Napoli</venue>
+        <description>Sperimentazione segnica estesa su grande formato, focalizzata sulla trasposizione di archetipi mitologici tradizionali in andamenti vettoriali geometrici.</description>
+      </artwork>
+      <artwork id="art-2">
+        <title>Oltre l'Interpretazione di Copenaghen</title>
+        <year>2014</year>
+        <category>videoarte</category>
+        <venue>Città della Scienza Napoli / MAV Roma</venue>
+        <description>Installazione sinestetica e video-esperimento che mette in risonanza gli stati mentali degli osservatori con fluttuazioni luminose simulate.</description>
+      </artwork>
+      <artwork id="art-3">
+        <title>Esperimento EEG dei 200 Soggetti: Il Cervello Collettivo</title>
+        <year>2014</year>
+        <category>ricerca_arte</category>
+        <venue>Città della Scienza (Napoli, Moon Party)</venue>
+        <description>Rilevamento simultaneo e monitoraggio delle risonanze empatiche e di risincronizzazione ritmica tra coppie di soggetti durante performance sonore.</description>
+      </artwork>
+      <artwork id="art-4">
+        <title>Codici Alchemici: L'Opera Celeste</title>
+        <year>2005</year>
+        <category>installazione</category>
+        <venue>Centro Culturale Arte e Scienza / MAXXI (Archivio)</venue>
+        <description>Presentazione plastica e interattiva dei 22 glifi legati allo studio dell'alchimia rinascimentale vissuta come processo psicologico sincronico.</description>
+      </artwork>
+      <artwork id="art-5">
+        <title>Sincronismo Segnico Assoluto</title>
+        <year>2007</year>
+        <category>pittura</category>
+        <venue>PAN - Palazzo delle Arti Napoli</venue>
+        <description>Dipinto a tempera alchemica su tela grezza. Il dipinto è stato concepito durante un picco di sincronicità oggettiva riscontrata a livello familiare.</description>
+      </artwork>
+      <artwork id="art-6">
+        <title>La Geometria del Caso Significativo</title>
+        <year>2011</year>
+        <category>videoarte</category>
+        <venue>MAXXI - Museo Nazionale delle Arti del XXI Secolo</venue>
+        <description>Proiezione quadrifonica di segnale isocronico a 432Hz sovrapposto a sequenze video accelerate di evoluzioni stellari ed atomiche.</description>
+      </artwork>
+      <artwork id="art-7">
+        <title>Il Tempio delle Attività Intellettive</title>
+        <year>2013</year>
+        <category>installazione</category>
+        <venue>Città della Scienza Napoli (Ricostruzione post-incendio)</venue>
+        <description>Installazione sferica in rame ed ottone progettata per la purificazione degli spazi d'ascolto e la riduzione spaziale delle interferenze RF ambientali.</description>
+      </artwork>
+    </artworks>
+  </artworks_catalog>
+
+  <inventions_catalog>
+    <total_indexed_inventions>41</total_indexed_inventions>
+    <active_patents_uibm>3</active_patents_uibm>
+    <inventions>
+      <invention id="patent-1">
+        <num>1</num>
+        <title>AIC-SYNC© — Sistema Hardware e Software per Sincronicità Indotte</title>
+        <year>2024</year>
+        <patentNum>UIBM-2024-AIC01</patentNum>
+        <status>registered</status>
+        <description>Primo sistema bio-informatico integrato al mondo finalizzato al monitoraggio e all'induzione attiva di picchi creativi e convergenze sincronicistiche.</description>
+        <details>Questo sistema integra un lettore EEG multicanale portatile con sensori di variabilità cardiaca (HRV) e una matrice di feedback neuro-funzionali bio-adattivi (modulazioni acustiche binaurali, impulsi luminosi stroboscopici sintonizzati sulle onde Alpha e Theta, e micro-vibrazioni aptiche).</details>
+      </invention>
+      <invention id="patent-2">
+        <num>2</num>
+        <title>GeniusOm — Compattatore Domestico di Rifiuti Urbani "Zero Waste"</title>
+        <year>2013</year>
+        <patentNum>ITNA20130029A1</patentNum>
+        <status>registered</status>
+        <description>Compattatore domestico ad alta efficienza per lo smaltimento ecologico intelligente dei rifiuti urbani differenziati.</description>
+        <details>Sviluppato in collaborazione con ex collaboratori NASA. Consente la riduzione volumetrica fino al 90% dei rifiuti senza emissione di odori grazie a filtri molecolari termodinamicamente equilibrati. Premio Ecomondo 2014, offerta di €250k a Shark Tank Italia. Donato in licenza umanitaria.</details>
+      </invention>
+      <invention id="patent-3">
+        <num>3</num>
+        <title>Eco-Tuta Termodinamica Climatizzata per Impieghi Estremi</title>
+        <year>2018</year>
+        <patentNum>UIBM-2018-ETC03</patentNum>
+        <status>donated</status>
+        <description>Involucro protettivo termoregolato passivo ed attivo per fini protettivi di emergenza e ambienti ad alta escursione termica.</description>
+        <details>Tuta termodinamica auto-alimentata provvista di micro-canali idraulici per la stabilizzazione termica interna. Donata volontariamente per l'emergenza di protezione civile SARS-CoV-2.</details>
+      </invention>
+      <invention id="inv-4">
+        <num>4</num>
+        <title>Aero-Massaggiatore Meccanico a Campana di Risonanza</title>
+        <year>2005</year>
+        <status>registered</status>
+        <description>Dispositivo pneumatico micro-vibratorio indirizzato allo stimolo locale dei tessuti tramite frequenze simpatiche.</description>
+        <details>Sfrutta micro-vortici di pressione oscillanti per indurre risonanza muscolare a frequenza programmabile (8Hz - 24Hz).</details>
+      </invention>
+      <invention id="inv-5">
+        <num>5</num>
+        <title>L.E.T.S.I.S. Robotics Platform - Sistema di Giunti Simpatetici</title>
+        <year>2015</year>
+        <status>registered</status>
+        <description>Architettura robotica basata su giunzioni risonanti sintonizzate magneticamente.</description>
+        <details>Permette il coordinamento di micro-attuatori meccanici minimizzando la dispersione di forza dissipata in calore.</details>
+      </invention>
+    </inventions>
+  </inventions_catalog>
+
+  <music_catalog>
+    <total_compositions>40</total_compositions>
+    <distribution>USA Copyright and Streaming Platforms (Instagram reels, digital audio stores in high resolution, 432 Hz)</distribution>
+    <isochronic_properties_it>Tutte le quaranta partiture sono calibrate, equipaggiate con battimenti binaurali ed emissioni sintonizzate sul tono cardine dei 432 Hz e onde isocroniche per raccordarsi armonicamente allo studio della Legge di Risonanza del Campo Unificato.</isochronic_properties_it>
+    <isochronic_properties_en>All forty compositions are precisely structured, equipped with cohesive isochronic and binaural waves tuned to 432 Hz to foster unified-field frequency alignment.</isochronic_properties_en>
+    <tracks>
+      <track num="1">Risonanza Isocronica Sincronica - Tono Cardine 432 Hz</track>
+      <track num="2">Fluttuazione di Fase Alfa 8 Hz - Bio-Sintonizzazione</track>
+      <track num="3">Il Silenzio del Campo Solvay - Onde Sferiche Coerenti</track>
+      <track num="4">Oltre Copenaghen - Spettroscopia d'Onda Biaca</track>
+      <track num="5">Anima Fluida Pt. 1 - Strutturazione Segmentale</track>
+      <track num="6">Risonanza Schumann 7.83 Hz - Accoppiamento Quantistico</track>
+      <track num="7">Sincronicità Operativa - Modulazioni Euristiche Delta 3 Hz</track>
+      <track num="8">L'Equazione dello Specchio di Dirac - Armonizzazione Hertziana</track>
+    </tracks>
+  </music_catalog>
+
+  <synchronicity_theory>
+    <scientific_formula>S = φ(f)</scientific_formula>
+    <description_it>La formula definisce la sincronizzazione delle onde cerebrali coerenti (f) con le fluttuazioni intrinseche del Campo Unificato universale</description_it>
+    <levels>
+      <level num="1">
+        <title>Coincidenza Semplice</title>
+        <description>La percezione iniziale di eventi paralleli non intenzionali.</description>
+      </level>
+      <level num="2">
+        <title>Risonanza Empatica</title>
+        <description>Connessioni emotive, mentali o psichiche repentine tra soggetti. Certificata nell'esperimento EEG 2014 condotto a Napoli su 200 soggetti simultanei.</description>
+      </level>
+      <level num="3">
+        <title>Sincronismo Creativo</title>
+        <description>La convergenza intenzionale di accadimenti paralleli indotta o catalizzata mediante l'atto d'arte o scrittura.</description>
+      </level>
+      <level num="4">
+        <title>Campo Attivo</title>
+        <description>La propagazione dell'influenza intenzionale generata tramite produzione intellettiva continuativa ad alta frequenza.</description>
+      </level>
+      <level num="5">
+        <title>Sincronicità Operativa (Brevettuale)</title>
+        <description>La convergenza d'intuito utile a risolvere enigmi meccanici e funzionali (sviluppo brevetti GeniusOm e tutele legali).</description>
+      </level>
+      <level num="6">
+        <title>Sincronicità Generativa</title>
+        <description>Accoppiamento di risonanze biologiche (EEG, HRV) con riscontri pratici e invenzioni fisiche repentine.</description>
+      </level>
+      <level num="7">
+        <title>Sincronicità Magnetica (Imprenditoriale)</title>
+        <description>Attrazione oggettiva e amplificata delle risorse di sostegno e d'investimento finanziario (es. Shark Tank €250k).</description>
+      </level>
+      <level num="8">
+        <title>Campo Unificato</title>
+        <description>L'integrazione consapevole fra frequenze quantistiche (alte) e bio-frequenze umane (basse) nello stesso spettro Hz.</description>
+      </level>
+      <level num="9">
+        <title>Sincronicità Cosmica</title>
+        <description>Allineamento totale con dissoluzione del tempo lineare, risonanze coerenti di Schumann a 7.83Hz con l'ordine implicito cosmico.</description>
+      </level>
+    </levels>
+  </synchronicity_theory>
+
+  <documentary_episodes>
+    <series_title>Oltre il Velo di Copenaghen</series_title>
+    <episodes>
+      <episode num="1">
+        <title>La Rottura Strategica e l'Interpretazione Standard</title>
+        <description>Come la scuola di Niels Bohr ha rimosso l'osservatore cosciente dalla formula atomica riducendolo a mera statistica probabilistica.</description>
+      </episode>
+      <episode num="2">
+        <title>Il Paradosso EPR e la Non-Località</title>
+        <description>Analisi dello storico scontro Einstein-Bohr del 1935 e l'entanglement quantistico come prova fisica del Campo Unificato.</description>
+      </episode>
+      <episode num="3">
+        <title>Il Gatto di Schrödinger: Dualismo o Realtà?</title>
+        <description>Il confine tra probabilità e determinazione materiale con il ruolo attivo della coscienza nello scollasso d'onda.</description>
+      </episode>
+      <episode num="4">
+        <title>Paul Dirac e l'Equazione dello specchio</title>
+        <description>Sintesi cosmica tra materia e antimateria. Connessione della simmetria con i paralleli sincronicistici.</description>
+      </episode>
+      <episode num="5">
+        <title>Solvay 1927: Il Consiglio dei Saggi o l'Esclusione del Genio?</title>
+        <description>Un'analisi storiografica dei dibattiti di Solvay che hanno indirizzato ed imbrigliato la fisica mondiale.</description>
+      </episode>
+      <episode num="6">
+        <title>Il Paradosso Solvay-Manhattan: Da Solvay al Progetto Atomico</title>
+        <description>La complessa traiettoria che lega le tesi contrapposte all'impiego militare del potenziale quantico.</description>
+      </episode>
+      <episode num="7">
+        <title>La Trilogia AIC-EC-HZ: La Sintesi Hertziana della Coscienza</title>
+        <description>Come i micro-fenomeni dell'entanglement atomico si riproducono nei macro-canali isocronici neurali e biologici.</description>
+      </episode>
+    </episodes>
+  </documentary_episodes>
+</fondazione_falace_archive>

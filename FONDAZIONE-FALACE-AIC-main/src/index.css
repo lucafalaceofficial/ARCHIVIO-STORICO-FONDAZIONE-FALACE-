@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Titillium Web", sans-serif;
+  --font-sans: "Titillium Web", sans-serif;
+  --font-mono: "Titillium Web", sans-serif;
+  
+  --color-brand-gold: #00468C;
+  --color-brand-gold-light: #00468C;
+  --color-brand-navy: #00468C;
+  --color-brand-navy-dark: #000000;
+  --color-brand-navy-light: #00468C;
+
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 0px;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #00468C;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00468C;
+}
+
+/* Custom utility classes designed cleanly */
+.academic-card {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.academic-card:hover {
+  border-color: #00468C;
+}
+
+.serif-title {
+  font-family: var(--font-serif);
+}
+
+.italic-quote {
+  font-family: var(--font-serif);
+}
+
+/* Force elements with custom layouts to adhere strictly to flat design colors */
+.bg-\[\#FCFAF7\] {
+  background-color: #FFFFFF !important;
+}
+.bg-\[\#F8FAFC\] {
+  background-color: #FFFFFF !important;
+}
+.bg-\[\#F2F7FC\] {
+  background-color: #FFFFFF !important;
+}
+.text-slate-400, .text-slate-500, .text-slate-600, .text-slate-700, .text-slate-800, .text-slate-900, .text-slate-950 {
+  color: #000000 !important;
+}
+.border-slate-100, .border-slate-200, .border-slate-300, .border-slate-400 {
+  border-color: transparent !important; /* Hide other grey borders */
+}
+
+/* No shadow/gradients globally allowed */
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Dynamic remappings to match the exact institutional blue (#00468C) */
+*[class*="text-[#0066CC]"] {
+  color: #00468C !important;
+}
+*[class*="bg-[#0066CC]"] {
+  background-color: #00468C !important;
+}
+
+/* REMOVE ALL MODULE CARD BORDERS AND BLUE FRAMES ENTIRELY */
+*[class*="border-[#0066CC]"],
+*[class*="border-[#00468C]"],
+div[class*="border-[#0066CC]"],
+section[class*="border-[#0066CC]"],
+*[class*="border-2"],
+*[class*="border-4"],
+.bg-white.border,
+div.border, 
+div.border-2, 
+div.border-4,
+section.border,
+section.border-2,
+section.border-4,
+.academic-card {
+  border-width: 0px !important;
+  border-color: transparent !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important;
+  border-left-width: 0px !important;
+  border-right-width: 0px !important;
+}
+
+*[class*="hover:bg-[#0066CC]"]:hover {
+  background-color: #00468C !important;
+}
+*[class*="hover:text-[#0066CC]"]:hover {
+  color: #00468C !important;
+}
+*[class*="hover:border-[#0066CC]"]:hover {
+  border-color: transparent !important;
+}
+*[class*="scrollbar-thumb-[#0066CC]"] {
+  background-color: #00468C !important;
+}
+
+/* Precise MAXXI and Ministero della Cultura screenshot typography style:
+   - Semibold weight (600) instead of chunky black/bold to make it elegant and not "doppio o grasso"
+   - Strict uppercase for headings
+   - Dark Slate Gray/Blue color (#2E3842)
+   - Tight negative letter-spacing for premium editorial impact
+   - Compact line spacing */
+h1, h2, h3, h4, h5, h6, .gov-style-title {
+  font-family: "Titillium Web", sans-serif !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important; /* Semibold - clean, light and matches the MAXXI screenshot perfectly */
+  letter-spacing: -0.015em !important;
+  line-height: 1.15 !important;
+  color: #2E3842 !important; /* Perfect MAXXI Dark Slate Gray */
+}
+
+/* Exempt white-text headings and elements inside dark backgrounds from being forced to dark gray */
+h1.text-white, h2.text-white, h3.text-white, h4.text-white, h5.text-white, h6.text-white,
+h1[class*="text-white"], h2[class*="text-white"], h3[class*="text-white"], h4[class*="text-white"], h5[class*="text-white"], h6[class*="text-white"],
+h1[class*="text-slate-"], h2[class*="text-slate-"], h3[class*="text-slate-"], h4[class*="text-slate-"], h5[class*="text-slate-"], h6[class*="text-slate-"],
+h1[class*="text-zinc-"], h2[class*="text-zinc-"], h3[class*="text-zinc-"], h4[class*="text-zinc-"], h5[class*="text-zinc-"], h6[class*="text-zinc-"],
+h1[class*="text-blue-"], h2[class*="text-blue-"], h3[class*="text-blue-"], h4[class*="text-blue-"], h5[class*="text-blue-"], h6[class*="text-blue-"],
+h1[class*="text-amber-"], h2[class*="text-amber-"], h3[class*="text-amber-"], h4[class*="text-amber-"], h5[class*="text-amber-"], h6[class*="text-amber-"],
+h1[class*="text-purple-"], h2[class*="text-purple-"], h3[class*="text-purple-"], h4[class*="text-purple-"], h5[class*="text-purple-"], h6[class*="text-purple-"],
+*[class*="bg-[#00"] h1, *[class*="bg-[#00"] h2, *[class*="bg-[#00"] h3, *[class*="bg-[#00"] h4, *[class*="bg-[#00"] h5, *[class*="bg-[#00"] h6,
+*[class*="bg-[#1"] h1, *[class*="bg-[#1"] h2, *[class*="bg-[#1"] h3, *[class*="bg-[#1"] h4, *[class*="bg-[#1"] h5, *[class*="bg-[#1"] h6,
+*[class*="bg-[#0a"] h1, *[class*="bg-[#0a"] h2, *[class*="bg-[#0a"] h3, *[class*="bg-[#0a"] h4, *[class*="bg-[#0a"] h5, *[class*="bg-[#0a"] h6,
+*[class*="bg-slate-9"] h1, *[class*="bg-slate-9"] h2, *[class*="bg-slate-9"] h3, *[class*="bg-slate-9"] h4, *[class*="bg-slate-9"] h5, *[class*="bg-slate-9"] h6,
+*[class*="bg-zinc-9"] h1, *[class*="bg-zinc-9"] h2, *[class*="bg-zinc-9"] h3, *[class*="bg-zinc-9"] h4, *[class*="bg-zinc-9"] h5, *[class*="bg-zinc-9"] h6,
+*[class*="bg-black"] h1, *[class*="bg-black"] h2, *[class*="bg-black"] h3, *[class*="bg-black"] h4, *[class*="bg-black"] h5, *[class*="bg-black"] h6,
+*[class*="bg-blue-9"] h1, *[class*="bg-blue-9"] h2, *[class*="bg-blue-9"] h3, *[class*="bg-blue-9"] h4, *[class*="bg-blue-9"] h5, *[class*="bg-blue-9"] h6,
+*[class*="text-white"] h1, *[class*="text-white"] h2, *[class*="text-white"] h3, *[class*="text-white"] h4, *[class*="text-white"] h5, *[class*="text-white"] h6,
+.reader-theme-dark h1, .reader-theme-dark h2, .reader-theme-dark h3, .reader-theme-dark h4, .reader-theme-dark h5, .reader-theme-dark h6,
+.reader-theme-dark span, .reader-theme-dark p, .reader-theme-dark strong, .reader-theme-dark label, .reader-theme-dark select, .reader-theme-dark option, .reader-theme-dark div,
+.bg-zinc-900 h1, .bg-zinc-900 h2, .bg-zinc-900 h2, .bg-zinc-900 h3, .bg-zinc-900 h4, .bg-zinc-900 h5, .bg-zinc-900 h6,
+.bg-slate-900 h1, .bg-slate-900 h2, .bg-slate-900 h3, .bg-slate-900 h4, .bg-slate-900 h5, .bg-slate-900 h6 {
+  color: #FFFFFF !important;
+}
+
+/* Force bright high-contrast color for labels, spans, buttons and selects inside institutional blue backgrounds to prevent black text */
+*[class*="bg-[#00468C]"] p, *[class*="bg-[#00468C]"] span, *[class*="bg-[#00468C]"] strong, *[class*="bg-[#00468C]"] select, *[class*="bg-[#00468C]"] option, *[class*="bg-[#00468C]"] label, *[class*="bg-[#00468C]"] div,
+*[class*="bg-[#002244]"] p, *[class*="bg-[#002244]"] span, *[class*="bg-[#002244]"] strong, *[class*="bg-[#002244]"] select, *[class*="bg-[#002244]"] option, *[class*="bg-[#002244]"] label, *[class*="bg-[#002244]"] div,
+*[class*="bg-[#0066CC]"] p, *[class*="bg-[#0066CC]"] span, *[class*="bg-[#0066CC]"] strong, *[class*="bg-[#0066CC]"] select, *[class*="bg-[#0066CC]"] option, *[class*="bg-[#0066CC]"] label, *[class*="bg-[#0066CC]"] div {
+  color: #FFFFFF !important;
+}
+
+/* Direct exemption for elements with slate text color inside blue or dark backgrounds from being forced to pure black */
+*[class*="bg-[#0"] .text-slate-500, *[class*="bg-[#0"] .text-slate-600, *[class*="bg-[#0"] .text-slate-400, *[class*="bg-[#0"] .text-slate-300,
+*[class*="bg-[#1"] .text-slate-500, *[class*="bg-[#1"] .text-slate-100, *[class*="bg-[#1"] .text-slate-600, *[class*="bg-[#1"] .text-slate-400, *[class*="bg-[#1"] .text-slate-300,
+*[class*="bg-slate-9"] .text-slate-500, *[class*="bg-slate-9"] .text-slate-600, *[class*="bg-slate-9"] .text-slate-400, *[class*="bg-slate-9"] .text-slate-300,
+*[class*="bg-zinc-9"] .text-slate-500, *[class*="bg-zinc-9"] .text-slate-600, *[class*="bg-zinc-9"] .text-slate-400, *[class*="bg-zinc-9"] .text-slate-300,
+*[class*="bg-black"] .text-slate-500, *[class*="bg-black"] .text-slate-600, *[class*="bg-black"] .text-slate-400, *[class*="bg-black"] .text-slate-300,
+.reader-theme-dark .text-slate-500, .reader-theme-dark .text-slate-600, .reader-theme-dark .text-slate-400, .reader-theme-dark .text-slate-300 {
+  color: #E2E8F0 !important; /* Force to high-contrast slate-200 silver/white */
+}
+
+/* Disable all outline and focus rings globally to prevent blue squares/rectangles on click/tap, e.g. hamburger button */
+*:focus, *:active, button:focus, button:active, button:focus-visible, a:focus, a:focus-visible, select:focus, input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Aggressively override and cap all heavy/fat font weight classes and tag selectors to elegant semibold (600) */
+.font-black,
+.font-extrabold,
+.font-bold,
+strong,
+b,
+*[class*="font-black"],
+*[class*="font-extrabold"],
+*[class*="font-bold"] {
+  font-weight: 600 !important; /* Forces elegant, clean weights everywhere - including PDFs, simulator, and pages */
+}
+
+/* Specific sub-element handles to keep the royal/navy blue style if needed */
+.blue-gov-title {
+  color: #00468C !important;
+}
+
+/* Support active state tabs */
+.active-tab-style {
+  color: #00468C !important;
+  border-bottom: 2px solid #00468C !important; /* Use a clean bottom-line instead of a box outline */
+}

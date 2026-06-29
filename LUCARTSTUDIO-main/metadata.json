@@ -1,0 +1,6 @@
+{
+  "name": "Fondazione Luca Falace",
+  "description": "Portale ufficiale di attestazione e archivio del patrimonio intellettuale del Dott. Luca Falace. Arte, Scienza, Sincronismo Creativo e Campo Unificato AIC-EC-HZ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

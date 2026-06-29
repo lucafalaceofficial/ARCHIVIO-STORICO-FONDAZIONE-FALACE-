@@ -1,0 +1,8 @@
+{
+  "name": "Portale Fondazione Falace — Feed Infinito Unificato",
+  "description": "Portale ufficiale unificato della Fondazione Falace delle AIC (Arte, Ingegneria e Scienza) con feed verticale infinito a 16 capitoli, collezioni d'arte, libri, brevetti, teoria AIC e poli museali digitali.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

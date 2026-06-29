@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fondazione Falace — Patrimonio Intellettuale di Luca Falace</title>
+    <meta name="description" content="Portale ufficiale di attestazione del patrimonio intellettuale del Dott. Luca Falace. Sincronismo Creativo e Campo Unificato AIC-EC-HZ." />
+    <!-- PDF.js CDN for high-fidelity interactive document reader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      // Set worker source for pdf.js once loaded
+      if (typeof window !== 'undefined') {
+        const pdfjsLib = window['pdfjs-dist/build/pdf'] || window.pdfjsLib;
+        if (pdfjsLib) {
+          window.pdfjsLib = pdfjsLib;
+          pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#FCFAF7] text-[#1C1C1C]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

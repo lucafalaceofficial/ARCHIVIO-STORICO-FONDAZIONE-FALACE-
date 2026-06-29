@@ -1,0 +1,23 @@
+{
+  "collections": {
+    "users": {
+      "description": "User specific accounts",
+      "documents": {
+        "preferences": {
+          "schema": {
+            "language": "string",
+            "activeSection": "number",
+            "isBiographyOpen": "boolean",
+            "lastUpdated": "timestamp"
+          }
+        },
+        "chat_history": {
+          "schema": {
+            "messages": "array",
+            "lastUpdated": "timestamp"
+          }
+        }
+      }
+    }
+  }
+}

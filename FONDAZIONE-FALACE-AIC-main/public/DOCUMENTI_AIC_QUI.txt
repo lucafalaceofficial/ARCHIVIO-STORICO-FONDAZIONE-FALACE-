@@ -1,0 +1,24 @@
+INSTRUCTIONS FOR ORIGINAL PDFS (DOTT. LUCA FALACE):
+--------------------------------------------------
+Gentile Dott. Falace,
+
+Per caricare in modo permanente i suoi reali PDF originali ed evitare l'utilizzo di testi digitalizzati provvisori, la invito ad inserire i suoi file PDF personali direttamente in questa cartella tramite la schermata dei files sulla sinistra di AI Studio.
+
+Nominare i file esattamente come indicato di seguito per abilitare il download istantaneo automatico a tutti i visitatori del portale:
+
+1. Per "PROGETTO DI SVILUPPO PER LA FONDAZIONE AIC":
+   Nome del file: sviluppo.pdf (Percorso: /public/sviluppo.pdf)
+
+2. Per "SEDE E PATRIMONIO DELLA FONDAZIONE AIC":
+   Nome del file: sede.pdf (Percorso: /public/sede.pdf)
+
+3. Per "PIANO DIDATTICO DEI 40 CORSI":
+   Nome del file: corsi.pdf (Percorso: /public/corsi.pdf)
+
+4. Per "CARTEGGIO STORICO, L'OPERA CELESTE & COPYRIGHT":
+   Nome del file: carteggio.pdf (Percorso: /public/carteggio.pdf)
+
+Nota: Abbiamo anche implementato un modulo di caricamento visuale direttamente dentro l'applicazione in modo che possa trascinare e rilasciare i PDF reali dal suo computer e testare subito il loro funzionamento reale!
+
+Grazie!
+Fondazione Falace delle AIC

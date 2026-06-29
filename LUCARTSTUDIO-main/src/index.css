@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+  
+  --color-brand-gold: #C8A84B;
+  --color-brand-gold-light: #E8C96A;
+  --color-brand-navy: #1A3A6E;
+  --color-brand-navy-dark: #0F2347;
+  --color-brand-navy-light: #2E5299;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFDFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A84B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8C96A;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Fondazione AIC - L'Opera Celeste",
+  "description": "Il Portale Internazionale della Fondazione AIC - Centro Culturale Virtuale delle Arti e delle Scienze. Ideato da Luca Falace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Fondazione Falace",
+  "description": "Portale ufficiale della Fondazione Falace per lo studio, la ricerca e l'archiviazione del Sincronismo Creativo e della Teoria del Campo Unificato.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

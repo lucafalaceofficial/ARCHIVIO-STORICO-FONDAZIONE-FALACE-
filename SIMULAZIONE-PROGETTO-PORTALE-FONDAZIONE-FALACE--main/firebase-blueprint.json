@@ -1,0 +1,68 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "Exhaustive user profile with biographical, research, and creative credentials",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "The unique user authentication identifier"
+        },
+        "fullName": {
+          "type": "string",
+          "description": "Full legal name or artist credential"
+        },
+        "email": {
+          "type": "string",
+          "description": "Primary electronic contact address"
+        },
+        "selectedSection": {
+          "type": "string",
+          "description": "The primary administrative macro-section of interest"
+        },
+        "selectedSubsection": {
+          "type": "string",
+          "description": "The specialized sub-discipline under the selected macro-section"
+        },
+        "avatarUrl": {
+          "type": "string",
+          "description": "The public locator URL pointing to the user's graphical avatar/photo"
+        },
+        "biography": {
+          "type": "string",
+          "description": "Full formal biography or statement of intent"
+        },
+        "specialization": {
+          "type": "string",
+          "description": "Specific research focus or primary focus"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "Personal phone number"
+        },
+        "webLink": {
+          "type": "string",
+          "description": "Personal portfolio or academic link"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["autore", "visitatore"],
+          "description": "Whether the user is registered as an Author (creative) or a general Visitor"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "System registration timestamp"
+        }
+      },
+      "required": ["userId", "fullName", "email", "type"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User profiles indexed by UID for granular permissions"
+    }
+  }
+}
